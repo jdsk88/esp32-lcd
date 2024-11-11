@@ -1,4 +1,4 @@
-#define AA_FONT_SMALL "coolvetica-regular"
+#define AA_FONT_SMALL "Aleo-Regular-PL"
 
 #include <iostream>
 
@@ -29,12 +29,12 @@ Widzę i opisuję, bo tęsknię po tobie.)";
     return;
   }
   Serial.println("LittleFS is available!");
-  if (LittleFS.exists("/coolvetica-regular.vlw"))
+  if (LittleFS.exists("/Aleo-Regular-PL.vlw"))
   {
-    Serial.println("Font coolvetica-regular is exist od disk!");
+    Serial.println("Font Aleo-Regular-PL is exist od disk!");
   }
 
-  String fileName = "coolvetica-regular";
+  String fileName = "Aleo-Regular-PL";
   tft.loadFont(fileName, LittleFS);
   tft.showFont(2000);
 
