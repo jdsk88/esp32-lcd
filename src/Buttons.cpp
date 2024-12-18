@@ -1,6 +1,17 @@
 #include <cstdint>
-#include "variables.h"
 #include "Buttons.h"
+#include "main-variables.h"
+#include "buttons-variables.h"
+#include <TFT_eSPI.h>
+#include <TFT_eWidget.h>
+
+extern TFT_eSPI tft;
+extern ButtonWidget btnU1;
+extern ButtonWidget btnD1;
+extern ButtonWidget btnU2;
+extern ButtonWidget btnD2;
+extern ButtonWidget btnU3;
+extern ButtonWidget btnD3;
 
 void grUp(uint16_t pos_x, uint16_t pos_y, uint32_t color)
 {

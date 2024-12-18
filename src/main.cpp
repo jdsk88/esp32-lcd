@@ -3,24 +3,19 @@
 // Requires widget library here:
 // https://github.com/Bodmer/TFT_eWidget
 
+#include <TFT_eSPI.h>    // Hardware-specific library
+#include <TFT_eWidget.h> // Widget library
 #include <FS.h>
-
 #include <bb_captouch.h>
-#include "variables.h"
+#include "main-variables.h"
 #include "Free_Fonts.h"
 #include "Buttons.h"
 
-extern TFT_eSPI tft = TFT_eSPI(); // Invoke custom library
+TFT_eSPI tft = TFT_eSPI(); // Invoke custom library
 BBCapTouch bbct;
 int i;
 TOUCHINFO ti;
 
-String label[6] = {"Salon", "Kuchnia", "Jadalnia", "", "", ""};
-uint8_t varOut[6] = {15, 20, 30, 35, 50, 80};
-uint8_t varOld[6] = {0, 0, 0, 0, 0, 0};
-uint8_t LbtnPress[12] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-uint8_t outState[6] = {0, 0, 0, 0, 0, 0};
-// #define CALIBRATION_FILE "/TouchCalData1"
 #define REPEAT_CAL false
 
 ButtonWidget btnU1 = ButtonWidget(&tft);
