@@ -1,5 +1,3 @@
-#include "Free_Fonts.h"
-
 #define DEBUG 1
 #define T_STEP 200
 #define SCAN_TIME 50

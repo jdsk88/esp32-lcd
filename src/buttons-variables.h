@@ -43,3 +43,6 @@ uint8_t outState[6] = {0, 0, 0, 0, 0, 0};
 #define VAR_POS_Y BTN_POS_Y1 - (BTN_H / 2) - 4
 #endif
 
+char *EMPTY_LABEL = (char *)"";
+char *DOWN_LABEL = (char *)"DOWN";
+char *UP_LABEL = (char *)"UP";

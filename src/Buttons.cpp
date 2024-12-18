@@ -293,7 +293,7 @@ void btnD3_releaseAction(void)
 void initButtons()
 {
 
-  btnU1.initButton(BTN_LEFT_POS_X, BTN_POS_Y1, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, "", 1); // x, y, w, h, outline, fill, textcolor, label, textsize
+  btnU1.initButton(BTN_LEFT_POS_X, BTN_POS_Y1, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, EMPTY_LABEL, 1); // x, y, w, h, outline, fill, textcolor, label, textsize
   btnU1.setPressAction(btnU1_pressAction);
   btnU1.setReleaseAction(btnU1_releaseAction);
   btnU1.drawSmoothButton(false, 1, TFT_BLACK); // 3 is outline width, TFT_BLACK is the surrounding background colour for anti-aliasing
@@ -309,30 +309,30 @@ void initButtons()
   if (outState[OUT_1])
     tft.print((int)varOut[OUT_1]);
 
-  btnD1.initButton(BTN_LEFT_POS_X, BTN_POS_Y2, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, "DOWN", 1);
+  btnD1.initButton(BTN_LEFT_POS_X, BTN_POS_Y2, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, DOWN_LABEL, 1);
   btnD1.setPressAction(btnD1_pressAction);
   btnD1.setReleaseAction(btnD1_releaseAction);
   btnD1.drawSmoothButton(false, 1, TFT_BLACK); // 3 is outline width, TFT_BLACK is the surrounding background colour for anti-aliasing
 
   // Zestaw 2
-  btnU2.initButton(BTN_MID_POS_X, BTN_POS_Y1, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, "", 1);
+  btnU2.initButton(BTN_MID_POS_X, BTN_POS_Y1, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, EMPTY_LABEL, 1);
   btnU2.setPressAction(btnU2_pressAction);
   btnU2.setReleaseAction(btnU2_releaseAction);
   btnU2.drawSmoothButton(false, 1, TFT_BLACK); // 3 is outline width, TFT_BLACK is the surrounding background colour for anti-aliasing
   rtUp(BTN_MID_POS_X, BTN_POS_Y1, TFT_DARKGREY);
 
-  btnD2.initButton(BTN_MID_POS_X, BTN_POS_Y2, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, "DOWN", 1);
+  btnD2.initButton(BTN_MID_POS_X, BTN_POS_Y2, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, DOWN_LABEL, 1);
   btnD2.setPressAction(btnD2_pressAction);
   btnD2.setReleaseAction(btnD2_releaseAction);
   btnD2.drawSmoothButton(false, 1, TFT_BLACK); // 3 is outline width, TFT_BLACK is the surrounding background colour for anti-aliasing
 
   // zestaw 3
-  btnU3.initButton(BTN_RIGHT_POS_X, BTN_POS_Y1, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, "UP", 1);
+  btnU3.initButton(BTN_RIGHT_POS_X, BTN_POS_Y1, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, UP_LABEL, 1);
   btnU3.setPressAction(btnU3_pressAction);
   btnU3.setReleaseAction(btnU3_releaseAction);
   btnU3.drawSmoothButton(false, 1, TFT_BLACK); // 3 is outline width, TFT_BLACK is the surrounding background colour for anti-aliasing
 
-  btnD3.initButton(BTN_RIGHT_POS_X, BTN_POS_Y2, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, "DOWN", 1);
+  btnD3.initButton(BTN_RIGHT_POS_X, BTN_POS_Y2, BTN_W, BTN_H, TFT_WHITE, TFT_BLACK, TFT_WHITE, DOWN_LABEL, 1);
   btnD3.setPressAction(btnD3_pressAction);
   btnD3.setReleaseAction(btnD3_releaseAction);
   btnD3.drawSmoothButton(false, 1, TFT_BLACK); // 3 is outline width, TFT_BLACK is the surrounding background colour for anti-aliasing
